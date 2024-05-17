@@ -8,53 +8,67 @@ copyrightFooter.innerHTML = '<span href="https://invoice.chtek.de" target="_blan
 */
 
 // jQuery Wait//
-var waitForJQuery = setInterval(function () {
+var waitForJQuery = setInterval(function() {
     if (typeof $ != 'undefined') {
 
         // jQuery Exec //
 
 
-$(document).ready(function () {
-  
-// Load Icons
-let supportIcon ="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIEdlbmVyYXRvcjogU1ZHIFJlcG8gTWl4ZXIgVG9vbHMgLS0+DQo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDMyIDMyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KPGcgaWQ9Imljb21vb24taWdub3JlIj4NCjwvZz4NCjxwYXRoIGQ9Ik0xNiAzLjIwNWMtNy4wNjYgMC0xMi43OTUgNS43MjgtMTIuNzk1IDEyLjc5NXM1LjcyOSAxMi43OTQgMTIuNzk1IDEyLjc5NWM3LjA2Ny0wLjAwMSAxMi43OTUtNS43MjkgMTIuNzk1LTEyLjc5NXMtNS43MjktMTIuNzk1LTEyLjc5NS0xMi43OTV6TTE1Ljk5OSAyMS44NjRjLTMuMjMzIDAtNS44NjMtMi42MzEtNS44NjMtNS44NjRzMi42MzEtNS44NjQgNS44NjQtNS44NjRoMC4wMDFjMy4yMzMgMCA1Ljg2MyAyLjYzMSA1Ljg2MyA1Ljg2NHMtMi42MzEgNS44NjQtNS44NjUgNS44NjR6TTIyLjM5NSAxMy4zMjdsNC4wMjgtMi42OTNjMC44MzIgMS42MDkgMS4zMDUgMy40MzMgMS4zMDUgNS4zNjYgMCAxLjkwOS0wLjQ2MSAzLjcxLTEuMjczIDUuMzA1bC00LjAzNS0yLjY5OWMwLjMyNy0wLjgwNSAwLjUxMS0xLjY4MyAwLjUxMS0yLjYwNiAwLTAuOTQ4LTAuMTkxLTEuODUtMC41MzUtMi42NzN6TTI1Ljg5IDkuNzA4bC0zLjk5IDIuNjY4Yy0wLjU4LTAuOTQyLTEuMzc3LTEuNzMzLTIuMzI1LTIuMzA1bDIuNjY5LTMuOTkxYzEuNDY2IDAuOTI2IDIuNzEyIDIuMTY3IDMuNjQ1IDMuNjI5ek0yMS4zMTYgNS41NWwtMi42OTggNC4wMzRjLTAuODA4LTAuMzMtMS42OS0wLjUxNS0yLjYxNy0wLjUxNWgtMC4wMDFjLTAuOTI3IDAtMS44MDkgMC4xODUtMi42MTcgMC41MTVsLTIuNjk4LTQuMDM0YzEuNTk3LTAuODE2IDMuNDAyLTEuMjc5IDUuMzE1LTEuMjc5czMuNzE5IDAuNDYzIDUuMzE2IDEuMjc5ek05Ljc1NiA2LjA3OGwyLjY3IDMuOTkyYy0wLjk1IDAuNTc0LTEuNzQ4IDEuMzY3LTIuMzI5IDIuMzExbC0zLjk5MS0yLjY2OWMwLjkzNC0xLjQ2NCAyLjE4Mi0yLjcwNyAzLjY1LTMuNjM0ek01LjU3NCAxMC42MzlsNC4wMjkgMi42OTRjLTAuMzQzIDAuODIyLTAuNTMzIDEuNzIyLTAuNTMzIDIuNjY3IDAgMC45MiAwLjE4MyAxLjc5NyAwLjUwOSAyLjU5OWwtNC4wMzYgMi43Yy0wLjgxLTEuNTkzLTEuMjctMy4zOTMtMS4yNy01LjI5OSAwLTEuOTMxIDAuNDcyLTMuNzUzIDEuMzAzLTUuMzYxek02LjA2OSAyMi4yMjlsMy45OTItMi42NjljMC41NzYgMC45NTkgMS4zNzcgMS43NjYgMi4zMzEgMi4zNWwtMi42NjkgMy45OWMtMS40NzMtMC45MzctMi43MjQtMi4xOTMtMy42NTQtMy42NzF6TTEwLjY1IDI2LjQzMmwyLjY5NS00LjAzMGMwLjgxOCAwLjM0IDEuNzEzIDAuNTI5IDIuNjU0IDAuNTI5IDAuMDAxIDAgMC4wMDEgMCAwLjAwMSAwIDAuOTQxIDAgMS44MzgtMC4xODkgMi42NTYtMC41MjlsMi42OTUgNC4wMzBjLTEuNjA2IDAuODI3LTMuNDI0IDEuMjk3LTUuMzUxIDEuMjk3cy0zLjc0NS0wLjQ3LTUuMzUtMS4yOTd6TTIyLjI3OCAyNS44OTlsLTIuNjY5LTMuOTkxYzAuOTUyLTAuNTgzIDEuNzUxLTEuMzg3IDIuMzI3LTIuMzQ0bDMuOTkyIDIuNjdjLTAuOTMgMS40NzUtMi4xNzkgMi43MjktMy42NSAzLjY2NXoiIGZpbGw9IiMwMDAwMDAiPg0KDQo8L3BhdGg+DQo8L3N2Zz4="
+        $(document).ready(function() {
 
-	
-// Clone Nav Item 
-$clonedEl = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav > a:nth-child(10)").clone();
+            // Load Icons
+            let supportIcon = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjwhLS0gVXBsb2FkZWQgdG86IFNWRyBSZXBvLCB3d3cuc3ZncmVwby5jb20sIEdlbmVyYXRvcjogU1ZHIFJlcG8gTWl4ZXIgVG9vbHMgLS0+DQo8c3ZnIHdpZHRoPSI4MDBweCIgaGVpZ2h0PSI4MDBweCIgdmlld0JveD0iMCAwIDMyIDMyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPg0KPGcgaWQ9Imljb21vb24taWdub3JlIj4NCjwvZz4NCjxwYXRoIGQ9Ik0xNiAzLjIwNWMtNy4wNjYgMC0xMi43OTUgNS43MjgtMTIuNzk1IDEyLjc5NXM1LjcyOSAxMi43OTQgMTIuNzk1IDEyLjc5NWM3LjA2Ny0wLjAwMSAxMi43OTUtNS43MjkgMTIuNzk1LTEyLjc5NXMtNS43MjktMTIuNzk1LTEyLjc5NS0xMi43OTV6TTE1Ljk5OSAyMS44NjRjLTMuMjMzIDAtNS44NjMtMi42MzEtNS44NjMtNS44NjRzMi42MzEtNS44NjQgNS44NjQtNS44NjRoMC4wMDFjMy4yMzMgMCA1Ljg2MyAyLjYzMSA1Ljg2MyA1Ljg2NHMtMi42MzEgNS44NjQtNS44NjUgNS44NjR6TTIyLjM5NSAxMy4zMjdsNC4wMjgtMi42OTNjMC44MzIgMS42MDkgMS4zMDUgMy40MzMgMS4zMDUgNS4zNjYgMCAxLjkwOS0wLjQ2MSAzLjcxLTEuMjczIDUuMzA1bC00LjAzNS0yLjY5OWMwLjMyNy0wLjgwNSAwLjUxMS0xLjY4MyAwLjUxMS0yLjYwNiAwLTAuOTQ4LTAuMTkxLTEuODUtMC41MzUtMi42NzN6TTI1Ljg5IDkuNzA4bC0zLjk5IDIuNjY4Yy0wLjU4LTAuOTQyLTEuMzc3LTEuNzMzLTIuMzI1LTIuMzA1bDIuNjY5LTMuOTkxYzEuNDY2IDAuOTI2IDIuNzEyIDIuMTY3IDMuNjQ1IDMuNjI5ek0yMS4zMTYgNS41NWwtMi42OTggNC4wMzRjLTAuODA4LTAuMzMtMS42OS0wLjUxNS0yLjYxNy0wLjUxNWgtMC4wMDFjLTAuOTI3IDAtMS44MDkgMC4xODUtMi42MTcgMC41MTVsLTIuNjk4LTQuMDM0YzEuNTk3LTAuODE2IDMuNDAyLTEuMjc5IDUuMzE1LTEuMjc5czMuNzE5IDAuNDYzIDUuMzE2IDEuMjc5ek05Ljc1NiA2LjA3OGwyLjY3IDMuOTkyYy0wLjk1IDAuNTc0LTEuNzQ4IDEuMzY3LTIuMzI5IDIuMzExbC0zLjk5MS0yLjY2OWMwLjkzNC0xLjQ2NCAyLjE4Mi0yLjcwNyAzLjY1LTMuNjM0ek01LjU3NCAxMC42MzlsNC4wMjkgMi42OTRjLTAuMzQzIDAuODIyLTAuNTMzIDEuNzIyLTAuNTMzIDIuNjY3IDAgMC45MiAwLjE4MyAxLjc5NyAwLjUwOSAyLjU5OWwtNC4wMzYgMi43Yy0wLjgxLTEuNTkzLTEuMjctMy4zOTMtMS4yNy01LjI5OSAwLTEuOTMxIDAuNDcyLTMuNzUzIDEuMzAzLTUuMzYxek02LjA2OSAyMi4yMjlsMy45OTItMi42NjljMC41NzYgMC45NTkgMS4zNzcgMS43NjYgMi4zMzEgMi4zNWwtMi42NjkgMy45OWMtMS40NzMtMC45MzctMi43MjQtMi4xOTMtMy42NTQtMy42NzF6TTEwLjY1IDI2LjQzMmwyLjY5NS00LjAzMGMwLjgxOCAwLjM0IDEuNzEzIDAuNTI5IDIuNjU0IDAuNTI5IDAuMDAxIDAgMC4wMDEgMCAwLjAwMSAwIDAuOTQxIDAgMS44MzgtMC4xODkgMi42NTYtMC41MjlsMi42OTUgNC4wMzBjLTEuNjA2IDAuODI3LTMuNDI0IDEuMjk3LTUuMzUxIDEuMjk3cy0zLjc0NS0wLjQ3LTUuMzUtMS4yOTd6TTIyLjI3OCAyNS44OTlsLTIuNjY5LTMuOTkxYzAuOTUyLTAuNTgzIDEuNzUxLTEuMzg3IDIuMzI3LTIuMzQ0bDMuOTkyIDIuNjdjLTAuOTMgMS40NzUtMi4xNzkgMi43MjktMy42NSAzLjY2NXoiIGZpbGw9IiMwMDAwMDAiPg0KDQo8L3BhdGg+DQo8L3N2Zz4="
 
-//Change Nav Item Text
-$clonedEl.children()[1].innerHTML = "Ticket System"
-//Change Nav Item Link href
-$clonedEl.attr({
-	href: "https://chtek.de/",
-	target: "_blank"
-  });
-$clonedEl.children('img').attr({src: supportIcon});
-//Write to Nav
-$clonedEl.appendTo( "#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav");
 
-// Footer update
-$footerCopy = $("#main-sidebar > div.flex.flex-col.w-0.flex-1.overflow-hidden > footer > section > span")
+            // Clone Nav Item 
+            $clonedEl = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav > a:nth-child(10)").clone();
 
-// Update Link on span
-$footerCopy.attr({href: "https://chtek.de/"})
+            //Change Nav Item Text
+            $clonedEl.children()[1].innerHTML = "Ticket System"
+            //Change Nav Item Link href
+            $clonedEl.attr({
+                href: "https://chtek.de/",
+                target: "_blank"
+            });
+            $clonedEl.children('img').attr({
+                src: supportIcon
+            });
 
-// Update Link on a
-$footerCopy.children('a').attr({href: "https://chtek.de/"})
+            // Remove Red BG if exist
+            if ($($clonedEl).hasClass('bg-primary')) {
+                $clonedEl.removeClass('bg-primary')
+                $clonedEl.removeClass('text-white')
+            }
 
-// Update Link on a
-$footerCopy.children('a').text("CHTek")
+            //Write to Nav
+            $clonedEl.appendTo("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav");
 
-//Fix Logo img url
-$logoImg = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.flex.items-center.h-16.flex-shrink-0.px-4.bg-white.border-r.justify-center.z-10 > a > img")
-$logoImg.attr({src: "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"})
+            // Footer update
+            $footerCopy = $("#main-sidebar > div.flex.flex-col.w-0.flex-1.overflow-hidden > footer > section > span")
 
-});
-	    
-	// jQuery END//
+            // Update Link on span
+            $footerCopy.attr({
+                href: "https://chtek.de/"
+            })
+
+            // Update Link on a
+            $footerCopy.children('a').attr({
+                href: "https://chtek.de/"
+            })
+
+            // Update Link on a
+            $footerCopy.children('a').text("CHTek")
+
+            //Fix Logo img url
+            $logoImg = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.flex.items-center.h-16.flex-shrink-0.px-4.bg-white.border-r.justify-center.z-10 > a > img")
+            $logoImg.attr({
+                src: "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"
+            })
+
+
+
+        }); // jQuery END//
 
         clearInterval(waitForJQuery);
     }
 }, 10);
-
