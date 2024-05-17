@@ -9,5 +9,17 @@ copyrightFooter.innerHTML = '<span href="https://invoice.chtek.de" target="_blan
 
 // jQuery 
 
+// Clone Nav Item 
+$clonedEl = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav > a:nth-child(10)").clone();
 
+//Change Nav Item Text
+$clonedEl.children()[1].innerHTML = "Ticket System"
+//Change Nav Item Link href
+$clonedEl.attr({
+	href: "https://chtek.de/",
+	target: "_blank"
+  });
+  
+//Write to Nav
+$clonedEl.appendTo( "#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav");
 
