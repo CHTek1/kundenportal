@@ -7,7 +7,13 @@ let copyrightFooter = document.querySelector('footer.bg-white > section:nth-chil
 copyrightFooter.innerHTML = '<span href="https://invoice.chtek.de" target="_blank" class="text-xs md:text-sm text-gray-700">Copyright © 2024 <a class="text-primary hover:underline" href="https://invoice.chtek.de" target="_blank">CHTek</a>. </span>'
 */
 
-// jQuery //
+// jQuery Wait//
+var waitForJQuery = setInterval(function () {
+    if (typeof $ != 'undefined') {
+
+        // jQuery Exec //
+
+
 $(document).ready(function () {
   
 
@@ -42,3 +48,10 @@ $logoImg = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > di
 $logoImg.attr({src: "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"})
 
 });
+	    
+	// jQuery END//
+
+        clearInterval(waitForJQuery);
+    }
+}, 10);
+
