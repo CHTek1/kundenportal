@@ -8,6 +8,8 @@ copyrightFooter.innerHTML = '<span href="https://invoice.chtek.de" target="_blan
 */
 
 // jQuery //
+$(document).ready(function () {
+  
 
 // Clone Nav Item 
 $clonedEl = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav > a:nth-child(10)").clone();
@@ -39,3 +41,4 @@ $footerCopy.children('a').text("CHTek")
 $logoImg = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.flex.items-center.h-16.flex-shrink-0.px-4.bg-white.border-r.justify-center.z-10 > a > img")
 $logoImg.attr({src: "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"})
 
+});
