@@ -16,7 +16,12 @@ var waitForJQuery = setInterval(function () {
 
 $(document).ready(function () {
   
+// Load Icon Font
+$('<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css" rel="stylesheet"/>').appendTo('head');
+$('<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js" crossorigin="anonymous"/>').appendTo('head');
 
+
+	
 // Clone Nav Item 
 $clonedEl = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav > a:nth-child(10)").clone();
 
