@@ -36,8 +36,7 @@ var waitForJQuery = setInterval(function() {
 
             // Remove Red BG if exist
             if ($($clonedEl).hasClass('bg-primary')) {
-                $clonedEl.removeClass('bg-primary')
-                $clonedEl.removeClass('text-white')
+                $clonedEl.removeClass('bg-primary text-white')
             }
 
             //Write to Nav
