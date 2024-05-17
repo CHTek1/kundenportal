@@ -34,3 +34,8 @@ $footerCopy.children('a').attr({href: "https://chtek.de/"})
 
 // Update Link on a
 $footerCopy.children('a').text("CHTek")
+
+//Fix Logo img url
+$logoImg = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.flex.items-center.h-16.flex-shrink-0.px-4.bg-white.border-r.justify-center.z-10 > a > img")
+$logoImg.attr({src: "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"})
+
