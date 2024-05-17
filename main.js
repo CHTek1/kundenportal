@@ -1,6 +1,6 @@
 // Debug
 //alert("Hello FROM chtek git");
-
+//alert($().jquery);
 /*
 
 let copyrightFooter = document.querySelector('footer.bg-white > section:nth-child(1)');
@@ -8,6 +8,6 @@ copyrightFooter.innerHTML = '<span href="https://invoice.chtek.de" target="_blan
 */
 
 // jQuery 
-alert($().jquery);
+
 
 
