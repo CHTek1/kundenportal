@@ -72,6 +72,14 @@ var waitForJQuery = setInterval(function() {
                 src: $logoImgURL
             })
 
+            //CSS Fixes
+
+            //Dashboard
+            if (window.location.pathname == "/client/dashboard") {
+                alert("Dash")
+            }
+
+
         }); // jQuery END//
 
         clearInterval(waitForJQuery);
