@@ -39,10 +39,10 @@ var waitForJQuery = setInterval(function() {
             }
 
             //Write to Desktop Nav
-            $clonedEl.appendTo("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav").fadeIn( "slow" );
+            $clonedEl.appendTo("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.h-0.flex-1.flex.flex-col.overflow-y-auto.z-0.border-r > nav").hide().fadeIn( "slow" );
 
             //Write (clone) to Mobile Nav
-            $clonedEl.clone().appendTo("#main-sidebar > div.md\\:hidden > div.fixed.inset-y-0.left-0.flex.flex-col > div.mt-5.flex-1.h-0.overflow-y-auto > nav").fadeIn( "slow" );
+            $clonedEl.clone().appendTo("#main-sidebar > div.md\\:hidden > div.fixed.inset-y-0.left-0.flex.flex-col > div.mt-5.flex-1.h-0.overflow-y-auto > nav").hide().fadeIn( "slow" );
 
             // Footer update
             $footerCopy = $("#main-sidebar > div.flex.flex-col.w-0.flex-1.overflow-hidden > footer > section > span")
