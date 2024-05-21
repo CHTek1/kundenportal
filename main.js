@@ -67,10 +67,10 @@ var waitForJQuery = setInterval(function() {
             $logoImgMobile = $("#main-sidebar > div.md\\:hidden > div.fixed.inset-y-0.left-0.flex.flex-col > div.flex-shrink-0.flex.items-center.px-4 > img")
             $logoImgURL = "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"
             $logoImg.attr({
-                src: logoImgURL
+                src: $logoImgURL
             })
             $logoImgMobile.attr({
-                src: logoImgURL
+                src: $logoImgURL
             })
 
 
