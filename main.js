@@ -76,7 +76,9 @@ var waitForJQuery = setInterval(function() {
 
             //Dashboard
             if (window.location.pathname == "/client/dashboard") {
-                alert("Dash")
+                //alert("Dash")
+                let AddressStyle = $("#main-sidebar > div.flex.flex-col.w-0 > main > div:nth-child(2) > div > div.flex.flex-wrap > div.text-light-grey-text.flex.grow.basis-full.flex-col.justify-center.text-sm.md\\:basis-1\\/2.md\\:pl-4.xl\\:basis-auto.xl\\:px-5")
+                $(AddressStyle).attr('style','margin-left: 20px;');
             }
 
 
