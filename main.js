@@ -61,16 +61,16 @@ var waitForJQuery = setInterval(function() {
             // Update Link on a
             $footerCopy.children('a').text("CHTek")
 
-            //Fix Logo img urls
-            $logoImg = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.flex.items-center.h-16.flex-shrink-0.px-4.bg-white.border-r.justify-center.z-10 > a > img")
-            $logoImgMobile = $("#main-sidebar > div.md\\:hidden > div.fixed.inset-y-0.left-0.flex.flex-col > div.flex-shrink-0.flex.items-center.px-4 > img")
-            $logoImgURL = "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"
-            $logoImg.attr({
-                src: $logoImgURL
-            })
-            $logoImgMobile.attr({
-                src: $logoImgURL
-            })
+            //Fix Logo img urls --  fixed in backend
+            // $logoImg = $("#main-sidebar > div.hidden.md\\:flex.md\\:flex-shrink-0 > div > div.flex.items-center.h-16.flex-shrink-0.px-4.bg-white.border-r.justify-center.z-10 > a > img")
+            // $logoImgMobile = $("#main-sidebar > div.md\\:hidden > div.fixed.inset-y-0.left-0.flex.flex-col > div.flex-shrink-0.flex.items-center.px-4 > img")
+            // $logoImgURL = "https://invoice.chtek.de/storage/mBeMq8OvbltEoAWdTkuIxEU1yCh9b3zm/30Patmd4KbVkjirkdIUqD38EOq60fjHpQSJTwmV3.png"
+            // $logoImg.attr({
+            //     src: $logoImgURL
+            // })
+            // $logoImgMobile.attr({
+            //     src: $logoImgURL
+            // })
 
             //CSS Fixes
 
