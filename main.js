@@ -27,7 +27,7 @@ var waitForJQuery = setInterval(function() {
             $clonedEl.children()[1].innerHTML = "Ticket System"
             //Change Nav Item Link href
             $clonedEl.attr({
-                href: "https://chtek.de/",
+                href: "https://forms.office.com/e/E6s62GYTpp?origin=lprLink",
                 target: "_blank"
             });
             $clonedEl.children('img').attr({
